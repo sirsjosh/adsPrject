@@ -1,0 +1,131 @@
+/***setting up colors****/
+* {
+	
+}
+
+body{
+    background-color: aliceblue;
+    
+}
+
+.main-header{
+    color:lightgrey;
+    width:98.5%;
+    background-color:#363636;
+}
+
+.main{
+    width:95%;
+    background-color: white;
+    color:grey;
+    margin:auto;
+}
+
+h1,h2{
+   
+    margin-left:10px
+}
+
+.main-nav a{
+    color:lightgrey;
+    font-size: 20px;
+}
+
+/*this will zoom upon hover*/
+.main-nav li:hover{
+    
+    transform: scale(1.1);
+}
+
+/*removes the underline in links*/
+a{
+    text-decoration: none;
+    
+    
+}
+
+/*changes color on hover*/
+.main a:hover{
+    color:aquamarine;
+}
+
+/*removes the list icons*/
+li{
+    list-style-type: none;
+    margin:10px 10px;
+}
+
+.main-header,
+.main{
+    text-align: center;
+    
+}
+
+.main-list a{
+    color:grey;
+}
+
+
+ul{
+    padding:0;
+    text-align: center;
+}
+
+.headings{
+    /*border:solid 3px red;*/./
+}
+
+footer{
+    background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+.footer-inner{
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+
+ /***layout***/
+@media (min-width:670px){
+   
+/*sets the navbar at the top always*/
+    .main-header{
+        position:fixed;
+       
+        z-index: 20;
+        top: 0;
+        height:100px;
+        
+    }
+    
+    .main-list{
+        display: flex;
+        padding-top: 100px;
+        flex-wrap: wrap;
+        
+    }
+    
+    /*all elements will be equal but each with a width of 40% ,if space is not enough then the elements wrap to a new page as stated in the above rule*/
+    .headings{
+        flex:1 40%;
+    }
+    
+    .main-header,
+    .main-nav{
+        display:flex;
+    }
+}
+
+@media (min-width:770px){
+    .main-header {
+		flex-direction: row;
+        /*this will make the space between the h1 and the list items far from each other*/
+		justify-content: space-between;
+	}
+    
+    .headings{
+        flex:1 30%;
+    }
+}
