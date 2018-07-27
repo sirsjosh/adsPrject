@@ -28,6 +28,10 @@ button{
     margin-left: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
 @media (min-width:670px){
     form{
         width: 40%;
