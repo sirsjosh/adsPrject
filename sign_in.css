@@ -3,7 +3,7 @@
 form{
     margin:auto;
     background-color: darkgray;
-    height:220px;
+    height:auto;
     text-align: center;
 }
 
@@ -13,7 +13,7 @@ h1{
 }
 
 button{
-    background-color: burlywood;
+    background-color: limegreen;
     font-size: 20px;
     margin: 10px;
     margin-left: 70px;
@@ -31,6 +31,15 @@ button{
 a{
     text-decoration: none;
 }
+
+input[type]{
+    margin:10px 10px;
+}
+
+
+
+
+
 
 @media (min-width:670px){
     form{
